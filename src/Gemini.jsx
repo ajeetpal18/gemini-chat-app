@@ -11,8 +11,8 @@ const Gemini = () => {
         }
     }, []);
 
-    const URL = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyD3NKstEU2ON7IbxBkJV7OhdFDP-xQUwJI';
-    const payLoad =
+      const URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${process.env.REACT_APP_API_KEY}`;
+      const payLoad =
     {
         "contents": [
             {
